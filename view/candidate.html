@@ -1,0 +1,26 @@
+<div>
+<h1>{{msg}} Details</h1>   
+<input type="button" value="AddCandidate" ng-click="addCandicate()">
+</div>
+<table border="1" id="data_table">
+        <tr>
+                <th>S.No</th>
+                <th>Candidate ID</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Msg</th>
+                <th>Action</th>
+                <th></th>
+        </tr>
+        </table>
+        <table>
+            <tr ng-repeat="candidate in candidateLists track by $index">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ candidate.candidateId }}</td>
+                <td>{{ candidate.name }}</td>
+                <td>{{ candidate.mobileNo }}  </td>
+                <td>{{ candidate.mailId }}  </td>
+                <td> <input type="button" value="Candidate" ng-click="candidateList($index)"> </td>
+                <td> <input type="button" value="Acitivity" ng-click="acitivityList($index)"> </td>
+            </tr>
+        </table>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script type="text/javascript" src="./routingJSfiles/routing.js"></script>
+<script type="text/javascript" src="./js/activitiesCtrl.js"></script>
+<script type="text/javascript" src="./js/candidateCtrl.js"></script>
+<body ng-app="myApp">
+<p><a href="#/!">index</a></p>
+<a href="#!candidate">candidate</a>
+<a href="#!activities">activities</a>
+
+<p>Click on the links.</p>
+
+<p>Note that each "view" has its own controller which each gives the "msg" variable a value. {{msg}} </p>
+
+<div ng-view></div>
+
+</body>
+</html>
+`
