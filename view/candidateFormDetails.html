@@ -1,0 +1,21 @@
+<h1>{{msg}}</h1>
+
+<div class="">
+    <form>
+            <label>CandidateId :</label> <br>
+            <input type="text" placeholder="Enter CandidateId"  ng-model="candidateList.candidateId" ><br>
+            <label>Name :</label><br>
+            <input type="text" placeholder="Enter CandidateName"  ng-model="candidateList.candidateName"><br>
+            <label>MailId :</label><br>
+            <input type="text" placeholder="Enter candidateMailId"ng-model="candidateList.candidateMailId"><br>
+            <label>MobileNo. :</label><br>
+            <input type="text" placeholder="Enter candidateMobileNo"ng-model="candidateList.candidateMobileNo"><br>
+            <label>Source :</label><br>
+            <input type="text" placeholder="Enter candidateSource"ng-model="candidateList.candidateSource"><br>
+            <label>Referred By :</label><input type="text" placeholder="Enter ReferredBy"ng-model="candidateList.referredBy"><br>
+            <label>Qualification :</label> <input type="text" placeholder="Enter Qualification"ng-model="candidateList.qualification"><br>
+            <label>Passed Out:</label><input type="text" placeholder="Enter Passed Out "ng-model="candidateList.passedOut"><br>  
+            <button ng-click="save();">Save</button>
+         </form>
+    <pre>candidateList =   {{candidateList}}    </pre>
+</div>

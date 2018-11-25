@@ -8,6 +8,10 @@ app.config(function($routeProvider) {
     .when("/activities", {
         templateUrl : "view/activities.html",
         controller : "activitiesCtrl"
+    }) 
+    .when("/candidateFormDetails", {
+        templateUrl : "view/candidateFormDetails.html",
+        controller : "candidateFormDetailsCtrl"
     });
 });
 
